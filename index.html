@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>عيادة د. فاطمة صلاح عاشور | أمراض النساء والتوليد — المنيا</title>
+<meta name="description" content="عيادة الدكتورة فاطمة صلاح عاشور — استشارية أمراض النساء والتوليد بالمنيا. خبرة +١٥ سنة. احجزي موعدك عبر الواتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* ════════════════════════════════════════
+   DESIGN SYSTEM — Warm Feminine Palette
+════════════════════════════════════════ */
+:root {
+  /* Core palette */
+  --petal:   #e8a598;   /* dusty rose main */
+  --petal2:  #d4857a;   /* deeper rose */
+  --petal3:  #c26b5f;   /* accent rose */
+  --blush:   #f5ddd8;   /* soft blush */
+  --blush2:  #fceae6;   /* lighter blush */
+  --cream:   #fdf8f3;   /* warm cream bg */
+  --cream2:  #faf4ee;   /* slightly warmer */
+  --linen:   #f3ebe2;   /* linen warm */
+  --white:   #ffffff;
+  --sage:    #8aab9a;   /* soft sage accent */
+  --sage2:   #6d9686;
+
+  /* Text */
+  --ink:     #3a2820;   /* warm dark brown */
+  --ink2:    #5c3d34;
+  --txt:     #6b4f46;
+  --txt2:    #9c7c72;
+  --txt3:    #c4a49c;
+
+  /* Shadows */
+  --sh1: 0 2px 16px rgba(212,133,122,.10), 0 4px 24px rgba(58,40,32,.05);
+  --sh2: 0 8px 36px rgba(212,133,122,.16), 0 16px 48px rgba(58,40,32,.08);
+  --sh3: 0 16px 56px rgba(212,133,122,.22), 0 4px 20px rgba(58,40,32,.06);
+  --sh-rose: 0 10px 40px rgba(212,133,122,.40);
+  --sh-wa:   0 10px 36px rgba(37,211,102,.32);
+
+  /* Radii & spacing */
+  --r1: 12px;  --r2: 20px;  --r3: 32px;  --r4: 999px;
+  --tr: .42s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  direction: rtl;
+  line-height: 1.75;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: 'Amiri', 'Cairo', serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+p { color: var(--txt); line-height: 1.95; }
+a { text-decoration: none; color: inherit; transition: var(--tr); }
+img { max-width: 100%; height: auto; display: block; }
+ul { list-style: none; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+/* ── Decorative elements ── */
+.petal-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: var(--petal);
+  border-radius: 50%;
+}
+
+/* Wavy divider SVG  */
+.wave-top {
+  display: block; width: 100%;
+  margin-bottom: -2px;
+  line-height: 0;
+}
+.wave-bottom {
+  display: block; width: 100%;
+  margin-top: -2px;
+  line-height: 0;
+}
+
+/* ════════════════════════════════════════
+   NAVBAR
+════════════════════════════════════════ */
+.nav {
+  position: sticky; top: 0; z-index: 900;
+  background: rgba(253,248,243,.95);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(232,165,152,.18);
+  transition: box-shadow var(--tr);
+}
+.nav.up { box-shadow: var(--sh1); }
+.nav-inner {
+  max-width: 1180px; margin: 0 auto; padding: 0 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 70px;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; }
+.nav-logo {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--petal), var(--petal2));
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 18px;
+  box-shadow: 0 4px 14px rgba(212,133,122,.35);
+  flex-shrink: 0;
+}
+.nav-name { font-size: 14px; font-weight: 800; color: var(--ink); display: block; line-height: 1.2; }
+.nav-spec { font-size: 11px; color: var(--petal2); font-weight: 600; display: block; }
+.nav-links { display: flex; align-items: center; gap: 2px; }
+.nav-links a {
+  padding: 8px 14px; border-radius: 50px;
+  font-size: 13px; font-weight: 700; color: var(--txt);
+  transition: var(--tr); display: flex; align-items: center; gap: 6px;
+}
+.nav-links a:hover, .nav-links a.act {
+  background: var(--blush2); color: var(--petal2);
+}
+.nav-cta {
+  background: linear-gradient(135deg, var(--petal), var(--petal2)) !important;
+  color: #fff !important;
+  box-shadow: var(--sh-rose) !important;
+  padding: 9px 22px !important;
+}
+.nav-cta:hover { transform: translateY(-2px) !important; filter: brightness(1.06) !important; }
+.ham {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 8px; background: none; border: none; border-radius: 8px;
+}
+.ham span { display: block; width: 22px; height: 2px; background: var(--petal2); border-radius: 2px; transition: var(--tr); }
+
+/* ════════════════════════════════════════
+   HERO
+════════════════════════════════════════ */
+.hero {
+  background: linear-gradient(150deg, var(--white) 0%, var(--blush2) 45%, var(--blush) 100%);
+  position: relative; overflow: hidden;
+  padding-top: 40px;
+}
+
+/* Decorative blobs */
+.hero-blob {
+  position: absolute; border-radius: 50%;
+  pointer-events: none; animation: blob-float 9s ease-in-out infinite;
+}
+.blob-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(232,165,152,.22) 0%, transparent 70%);
+  top: -180px; left: -120px; animation-delay: 0s;
+}
+.blob-2 {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(138,171,154,.14) 0%, transparent 70%);
+  bottom: -100px; right: 0; animation-delay: -3.5s;
+}
+.blob-3 {
+  width: 260px; height: 260px;
+  background: radial-gradient(circle, rgba(232,165,152,.12) 0%, transparent 70%);
+  top: 35%; right: 35%; animation-delay: -6s;
+}
+@keyframes blob-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(12px, -18px) scale(1.03); }
+}
+
+/* Petal dots pattern */
+.hero-dots {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(232,165,152,.25) 1.2px, transparent 1.2px);
+  background-size: 36px 36px;
+  opacity: .5;
+}
+
+.hero-inner {
+  max-width: 1180px; margin: 0 auto; padding: 60px 28px 80px;
+  display: grid; grid-template-columns: 1.1fr .9fr;
+  gap: 60px; align-items: center; position: relative; z-index: 2;
+}
+
+/* Left text */
+.hero-pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #fff;
+  border: 1.5px solid rgba(232,165,152,.35);
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 12.5px; font-weight: 800; color: var(--petal2);
+  margin-bottom: 28px;
+  box-shadow: 0 4px 16px rgba(232,165,152,.14);
+  animation: fade-up .7s ease both;
+}
+.hero-pill-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--petal);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232,165,152,.5); }
+  50%       { box-shadow: 0 0 0 6px rgba(232,165,152,.0); }
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 4.8vw, 3.8rem);
+  color: var(--ink);
+  line-height: 1.18;
+  margin-bottom: 20px;
+  animation: fade-up .75s .08s ease both;
+}
+.hero h1 .rose-word {
+  color: var(--petal2);
+  position: relative; display: inline-block;
+}
+.hero h1 .rose-word::after {
+  content: '';
+  position: absolute; bottom: -4px; right: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--petal), transparent);
+  border-radius: 2px;
+}
+.hero-sub {
+  font-size: 15.5px; color: var(--txt);
+  line-height: 2.1; max-width: 460px;
+  margin-bottom: 36px;
+  animation: fade-up .75s .16s ease both;
+}
+.hero-stats {
+  display: flex; gap: 0;
+  background: #fff;
+  border-radius: var(--r2);
+  overflow: hidden;
+  border: 1.5px solid rgba(232,165,152,.2);
+  box-shadow: var(--sh1);
+  margin-bottom: 36px;
+  animation: fade-up .75s .24s ease both;
+}
+.hstat {
+  flex: 1; padding: 18px 14px; text-align: center;
+  border-left: 1.5px solid rgba(232,165,152,.15);
+  transition: background .3s;
+}
+.hstat:last-child { border-left: none; }
+.hstat:hover { background: var(--blush2); }
+.hstat-n {
+  font-size: 1.8rem; font-weight: 900;
+  color: var(--petal2); line-height: 1; display: block;
+  font-family: 'Cairo', sans-serif;
+}
+.hstat-l { font-size: 11px; color: var(--txt2); margin-top: 4px; display: block; font-weight: 600; }
+.hero-btns {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  animation: fade-up .75s .32s ease both;
+}
+
+/* Right visual */
+.hero-visual {
+  display: flex; justify-content: center; align-items: center;
+  position: relative;
+  animation: fade-scale .9s .2s ease both;
+}
+@keyframes fade-up   { from { opacity:0; transform: translateY(26px); } to { opacity:1; transform: translateY(0); } }
+@keyframes fade-scale { from { opacity:0; transform: scale(.88); }     to { opacity:1; transform: scale(1); } }
+
+/* Photo frame */
+.hero-frame {
+  position: relative; width: 340px;
+}
+.hero-frame-img-wrap {
+  width: 100%; aspect-ratio: 3/4;
+  border-radius: 200px 200px 160px 160px;
+  overflow: hidden;
+  border: 4px solid var(--blush);
+  box-shadow: var(--sh2);
+  position: relative;
+}
+.hero-frame-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+}
+.hero-frame-img-wrap::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(212,133,122,.15) 0%, transparent 50%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+/* Decorative ring */
+.hero-frame::before {
+  content: '';
+  position: absolute; inset: -14px;
+  border-radius: 210px 210px 170px 170px;
+  border: 2px dashed rgba(232,165,152,.35);
+  animation: spin-slow 22s linear infinite;
+  pointer-events: none;
+}
+@keyframes spin-slow { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+
+/* Floating cards */
+.hbadge {
+  position: absolute;
+  background: #fff; border-radius: var(--r2);
+  padding: 14px 18px; box-shadow: var(--sh2);
+  display: flex; align-items: center; gap: 12px;
+  border: 1.5px solid rgba(232,165,152,.15);
+  z-index: 3; animation: badge-bob 5s ease-in-out infinite;
+}
+.hbadge.b1 { bottom: 40px; left: -50px; animation-delay: 0s; }
+.hbadge.b2 { top: 50px; right: -44px; animation-delay: -2.5s; }
+@keyframes badge-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.hbadge-icon {
+  width: 40px; height: 40px; border-radius: 12px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.hbadge.b1 .hbadge-icon { background: var(--blush2); color: var(--petal2); }
+.hbadge.b2 .hbadge-icon { background: rgba(138,171,154,.14); color: var(--sage2); }
+.hbadge-t { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.3; }
+.hbadge-s { font-size: 11px; color: var(--txt2); }
+
+/* ════════════════════════════════════════
+   BUTTONS
+════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  padding: 13px 28px; border-radius: 50px;
+  font-family: 'Cairo', sans-serif; font-size: 14px; font-weight: 800;
+  cursor: pointer; border: none; transition: var(--tr);
+  text-decoration: none; white-space: nowrap; line-height: 1;
+}
+.btn-rose {
+  background: linear-gradient(135deg, var(--petal), var(--petal2));
+  color: #fff; box-shadow: var(--sh-rose);
+}
+.btn-rose:hover { transform: translateY(-3px); filter: brightness(1.07); color: #fff; box-shadow: 0 16px 44px rgba(212,133,122,.48); }
+.btn-wa {
+  background: linear-gradient(135deg, #2dc96d, #1a9952);
+  color: #fff; box-shadow: var(--sh-wa);
+}
+.btn-wa:hover { transform: translateY(-3px); color: #fff; filter: brightness(1.06); }
+.btn-ghost {
+  background: #fff; color: var(--petal2);
+  border: 2px solid rgba(232,165,152,.4); box-shadow: var(--sh1);
+}
+.btn-ghost:hover { border-color: var(--petal); background: var(--blush2); color: var(--petal2); }
+.btn-lg { padding: 16px 34px; font-size: 15px; }
+.btn-sm { padding: 9px 20px; font-size: 13px; }
+.btn-full { width: 100%; }
+
+/* ════════════════════════════════════════
+   TRUST STRIP
+════════════════════════════════════════ */
+.trust-strip {
+  background: linear-gradient(90deg, var(--petal2) 0%, var(--petal) 50%, var(--petal2) 100%);
+  padding: 14px 0; overflow: hidden;
+}
+.trust-items {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: nowrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 9px;
+  padding: 5px 28px;
+  border-left: 1px solid rgba(255,255,255,.2);
+  font-size: 13px; font-weight: 700; color: rgba(255,255,255,.9);
+  white-space: nowrap;
+}
+.trust-item:last-child { border-left: none; }
+.trust-item i { font-size: 15px; color: rgba(255,255,255,.8); }
+
+/* ════════════════════════════════════════
+   SECTION HEADER SHARED
+════════════════════════════════════════ */
+.sh {
+  text-align: center; margin-bottom: 60px;
+}
+.sh-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 12px; font-weight: 800; letter-spacing: .6px;
+  color: var(--petal2); text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.sh-eyebrow::before, .sh-eyebrow::after {
+  content: ''; width: 32px; height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--petal));
+}
+.sh-eyebrow::before { background: linear-gradient(270deg, transparent, var(--petal)); }
+.sh h2 { font-size: clamp(1.9rem, 3vw, 2.7rem); margin-bottom: 14px; }
+.sh p { font-size: 15px; color: var(--txt); max-width: 480px; margin: 0 auto; }
+.sh-ornament {
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; margin-top: 20px;
+}
+.sh-ornament .line { flex: 1; max-width: 80px; height: 1.5px; background: linear-gradient(90deg, transparent, var(--petal)); }
+.sh-ornament .line.r { background: linear-gradient(270deg, transparent, var(--petal)); }
+.sh-ornament .diamond {
+  width: 8px; height: 8px;
+  background: var(--petal); transform: rotate(45deg);
+  box-shadow: 0 0 0 4px rgba(232,165,152,.2);
+}
+
+/* ════════════════════════════════════════
+   SERVICES
+════════════════════════════════════════ */
+.sec-srv {
+  padding: 96px 0;
+  background: var(--white);
+  position: relative;
+}
+.srv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.srv-card {
+  background: var(--cream);
+  border-radius: var(--r3);
+  overflow: hidden;
+  border: 1.5px solid rgba(232,165,152,.12);
+  transition: transform .45s cubic-bezier(.25,.8,.25,1), box-shadow .45s, border-color .3s;
+  position: relative;
+}
+.srv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sh2);
+  border-color: rgba(232,165,152,.4);
+}
+.srv-card-img {
+  width: 100%; height: 190px; object-fit: cover;
+  display: block;
+  transition: transform .6s ease, filter .5s;
+  filter: saturate(.9) brightness(.97);
+}
+.srv-card:hover .srv-card-img { transform: scale(1.05); filter: saturate(1.05) brightness(1); }
+/* color top accent bar */
+.srv-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 0;
+  background: linear-gradient(135deg, var(--petal), var(--petal2));
+  transition: height .35s ease;
+  z-index: 2;
+}
+.srv-card:hover::before { height: 3px; }
+.srv-card-body { padding: 24px 26px 28px; }
+.srv-icon {
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, var(--blush2), var(--blush));
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; color: var(--petal2);
+  margin-bottom: 16px;
+  transition: transform .35s, background .35s;
+  box-shadow: 0 4px 14px rgba(232,165,152,.2);
+}
+.srv-card:hover .srv-icon {
+  transform: scale(1.1) rotate(-5deg);
+  background: linear-gradient(135deg, var(--petal), var(--petal2));
+  color: #fff;
+}
+.srv-card h3 { font-size: 1rem; font-weight: 800; margin-bottom: 10px; color: var(--ink); }
+.srv-card p { font-size: 13.5px; line-height: 1.85; color: var(--txt); }
+.srv-link {
+  display: inline-flex; align-items: center; gap: 7px;
+  margin-top: 16px; font-size: 13px; font-weight: 800; color: var(--petal2);
+  transition: gap .3s, color .3s;
+}
+.srv-card:hover .srv-link { gap: 12px; color: var(--petal3); }
+
+/* ════════════════════════════════════════
+   ABOUT
+════════════════════════════════════════ */
+.sec-about {
+  padding: 96px 0;
+  background: linear-gradient(160deg, var(--blush2) 0%, var(--cream2) 55%, var(--white) 100%);
+  position: relative; overflow: hidden;
+}
+/* Decorative large circle */
+.about-deco-circle {
+  position: absolute;
+  width: 500px; height: 500px; border-radius: 50%;
+  border: 60px solid rgba(232,165,152,.06);
+  bottom: -180px; left: -100px;
+  pointer-events: none;
+}
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1.5fr;
+  gap: 72px; align-items: center; position: relative; z-index: 2;
+}
+/* Image side */
+.about-img-col { position: relative; }
+.about-img-wrap {
+  border-radius: 120px 120px 80px 80px;
+  overflow: hidden; position: relative;
+  aspect-ratio: 4/5;
+  box-shadow: var(--sh2);
+  border: 5px solid var(--blush);
+}
+.about-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+}
+.about-img-wrap::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(212,133,122,.18) 0%, transparent 45%);
+  pointer-events: none;
+}
+/* Corner accents */
+.about-corner-tl {
+  position: absolute; top: -16px; right: -16px;
+  width: 80px; height: 80px;
+  border-top: 3px solid var(--petal);
+  border-right: 3px solid var(--petal);
+  border-radius: 0 20px 0 0;
+  opacity: .5;
+}
+.about-corner-br {
+  position: absolute; bottom: -14px; left: -14px;
+  width: 60px; height: 60px;
+  border-bottom: 3px solid var(--sage);
+  border-left: 3px solid var(--sage);
+  border-radius: 0 0 14px 0;
+  opacity: .4;
+}
+/* Float credential badge */
+.about-badge {
+  position: absolute; bottom: -24px; left: -36px;
+  background: #fff; border-radius: var(--r2);
+  padding: 20px 22px; box-shadow: var(--sh2);
+  display: flex; gap: 14px; align-items: center;
+  border-right: 4px solid var(--petal);
+  max-width: 230px; z-index: 4;
+}
+.ab-icon {
+  width: 46px; height: 46px; border-radius: 14px; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--blush2), var(--blush));
+  display: flex; align-items: center; justify-content: center;
+  color: var(--petal2); font-size: 20px;
+}
+.ab-t { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.35; }
+.ab-s { font-size: 11.5px; color: var(--txt2); margin-top: 2px; }
+
+/* Text side */
+.about-text .eyebrow {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: var(--blush2); border: 1.5px solid rgba(232,165,152,.3);
+  color: var(--petal2); padding: 6px 18px; border-radius: 50px;
+  font-size: 12px; font-weight: 800; margin-bottom: 22px;
+}
+.about-text h2 {
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  margin-bottom: 8px;
+}
+.about-text h2 .rose { color: var(--petal2); }
+.about-text .subtitle {
+  font-size: 14px; color: var(--petal2); font-weight: 700;
+  margin-bottom: 22px; display: block;
+}
+.about-text > p {
+  font-size: 15px; color: var(--txt); line-height: 2.1; margin-bottom: 14px;
+}
+/* Feature pills */
+.feat-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px; margin: 26px 0 36px;
+}
+.feat {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 16px;
+  background: #fff; border-radius: var(--r1);
+  border: 1.5px solid rgba(232,165,152,.12);
+  box-shadow: var(--sh1);
+  transition: var(--tr);
+}
+.feat:hover { border-color: rgba(232,165,152,.35); transform: translateX(-3px); }
+.feat-icon {
+  width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0;
+  background: var(--blush2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--petal2); font-size: 15px;
+}
+.feat-t { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.3; }
+.feat-s { font-size: 11.5px; color: var(--txt2); margin-top: 2px; }
+.about-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ════════════════════════════════════════
+   STATS
+════════════════════════════════════════ */
+.sec-stats {
+  background: linear-gradient(135deg, var(--petal2) 0%, var(--petal) 60%, #e8b0a3 100%);
+  position: relative; overflow: hidden;
+}
+.sec-stats::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  position: relative; z-index: 2;
+}
+.stat-item {
+  padding: 56px 24px; text-align: center;
+  border-left: 1px solid rgba(255,255,255,.15);
+  transition: background .3s;
+}
+.stat-item:last-child { border-left: none; }
+.stat-item:hover { background: rgba(255,255,255,.06); }
+.stat-n {
+  font-size: 3rem; font-weight: 900; color: #fff;
+  display: block; line-height: 1;
+  font-family: 'Cairo', sans-serif;
+  text-shadow: 0 2px 16px rgba(0,0,0,.1);
+}
+.stat-l {
+  font-size: 13.5px; color: rgba(255,255,255,.78);
+  display: block; margin-top: 8px; font-weight: 600;
+}
+
+/* ════════════════════════════════════════
+   TESTIMONIALS
+════════════════════════════════════════ */
+.sec-test {
+  padding: 96px 0;
+  background: var(--white);
+  position: relative;
+}
+.test-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 22px; align-items: start;
+}
+.test-card {
+  background: var(--cream);
+  border-radius: var(--r2);
+  padding: 32px 28px;
+  border: 1.5px solid rgba(232,165,152,.12);
+  position: relative; overflow: hidden;
+  transition: transform .42s, box-shadow .42s, border-color .3s;
+}
+.test-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sh2);
+  border-color: rgba(232,165,152,.35);
+}
+/* large decorative quote */
+.test-q {
+  position: absolute; top: 14px; left: 18px;
+  font-size: 5.5rem; color: rgba(232,165,152,.15);
+  font-family: Georgia, serif; line-height: 1;
+  user-select: none; pointer-events: none;
+}
+.test-stars { display: flex; gap: 3px; margin-bottom: 16px; }
+.test-stars i { color: #e8a030; font-size: 13px; }
+.test-txt {
+  font-size: 14px; color: var(--txt); line-height: 2;
+  font-style: italic; margin-bottom: 24px; position: relative;
+}
+.test-author { display: flex; align-items: center; gap: 14px; }
+.test-av {
+  width: 52px; height: 52px; border-radius: 50%;
+  overflow: hidden; flex-shrink: 0;
+  border: 3px solid var(--blush);
+  box-shadow: 0 4px 12px rgba(232,165,152,.2);
+}
+.test-av img { width: 100%; height: 100%; object-fit: cover; }
+.test-name { font-size: 14px; font-weight: 800; color: var(--ink); }
+.test-role { font-size: 12px; color: var(--txt2); margin-top: 2px; }
+/* Offset 2nd card for visual interest */
+.test-card:nth-child(2) { margin-top: 36px; }
+/* Ribbon on 1st & 3rd */
+.test-card.c1::before { content:''; position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--petal2),var(--petal)); }
+.test-card.c3::before { content:''; position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--sage2),var(--sage)); }
+
+/* ════════════════════════════════════════
+   BOOKING
+════════════════════════════════════════ */
+.sec-booking {
+  padding: 96px 0;
+  background: linear-gradient(170deg, var(--blush2) 0%, var(--blush) 60%, var(--cream2) 100%);
+  position: relative; overflow: hidden;
+}
+.sec-booking::before {
+  content: '';
+  position: absolute;
+  width: 700px; height: 700px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,165,152,.18) 0%, transparent 65%);
+  bottom: -280px; left: -140px; pointer-events: none;
+}
+.booking-grid {
+  display: grid; grid-template-columns: 1fr 1.1fr;
+  gap: 64px; align-items: center; position: relative; z-index: 2;
+}
+/* Info side */
+.booking-info h2 { font-size: clamp(2rem, 3vw, 2.7rem); margin-bottom: 16px; }
+.booking-info h2 span { color: var(--petal2); }
+.booking-info > p { font-size: 15px; margin-bottom: 32px; }
+.bk-item {
+  display: flex; gap: 16px; align-items: center;
+  background: #fff; border-radius: var(--r2);
+  padding: 18px 22px; margin-bottom: 14px;
+  box-shadow: var(--sh1);
+  border: 1.5px solid rgba(232,165,152,.1);
+  transition: var(--tr);
+}
+.bk-item:hover { transform: translateX(-4px); border-color: rgba(232,165,152,.35); box-shadow: var(--sh2); }
+.bk-icon {
+  width: 46px; height: 46px; border-radius: 14px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.bk-icon.rose   { background: var(--blush2); color: var(--petal2); }
+.bk-icon.wa     { background: rgba(37,211,102,.1); color: #1a9952; }
+.bk-icon.gold   { background: rgba(220,180,100,.12); color: #c49a30; }
+.bk-title { font-size: 14px; font-weight: 800; color: var(--ink); }
+.bk-val   { font-size: 13px; color: var(--txt2); margin-top: 2px; }
+.bk-val a { color: var(--petal2); font-weight: 700; }
+
+/* Form side */
+.qform-card {
+  background: #fff; border-radius: var(--r3);
+  padding: 40px; box-shadow: var(--sh2);
+  border: 1.5px solid rgba(232,165,152,.15);
+  position: relative; overflow: hidden;
+}
+.qform-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--petal), var(--petal2), #e8b0a3);
+}
+.qf-title { font-size: 1.2rem; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+.qf-sub   { font-size: 13px; color: var(--txt2); margin-bottom: 26px; }
+.fg { margin-bottom: 18px; }
+.fl {
+  display: block; font-size: 12.5px; font-weight: 700;
+  color: var(--txt2); margin-bottom: 7px;
+}
+.fl .req { color: var(--petal2); }
+.fi {
+  width: 100%; padding: 13px 17px;
+  border: 2px solid rgba(232,165,152,.2);
+  border-radius: var(--r1);
+  font-family: 'Cairo', sans-serif; font-size: 14px;
+  color: var(--ink); background: var(--cream);
+  outline: none; transition: border .3s, box-shadow .3s, background .3s;
+  direction: rtl; -webkit-appearance: none;
+}
+.fi:focus {
+  border-color: var(--petal);
+  box-shadow: 0 0 0 4px rgba(232,165,152,.14);
+  background: #fff;
+}
+.fi::placeholder { color: var(--txt3); }
+
+/* ════════════════════════════════════════
+   LOCATION
+════════════════════════════════════════ */
+.sec-loc {
+  padding: 96px 0;
+  background: var(--cream2);
+}
+.loc-layout {
+  display: grid; grid-template-columns: 320px 1fr;
+  gap: 24px; align-items: stretch;
+}
+.loc-cards { display: flex; flex-direction: column; gap: 14px; }
+.loc-card {
+  background: #fff; border-radius: var(--r2);
+  padding: 22px; display: flex; gap: 14px; align-items: flex-start;
+  box-shadow: var(--sh1); border: 1.5px solid rgba(232,165,152,.1);
+  transition: var(--tr);
+}
+.loc-card:hover { transform: translateX(-4px); box-shadow: var(--sh2); border-color: rgba(232,165,152,.3); }
+.loc-ic {
+  width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 17px;
+}
+.loc-ic.rose  { background: var(--blush2); color: var(--petal2); }
+.loc-ic.sage  { background: rgba(138,171,154,.12); color: var(--sage2); }
+.loc-ic.gold  { background: rgba(220,180,100,.12); color: #c49a30; }
+.loc-ic.green { background: rgba(37,211,102,.1); color: #1a9952; }
+.loc-ct { font-size: 13px; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+.loc-cv { font-size: 13px; color: var(--txt); line-height: 1.7; }
+.loc-cv a { color: var(--petal2); font-weight: 700; }
+.loc-map-wrap {
+  border-radius: var(--r3); overflow: hidden;
+  box-shadow: var(--sh2); position: relative;
+  border: 2px solid rgba(232,165,152,.15);
+  min-height: 440px;
+}
+.loc-map-wrap iframe { width: 100%; height: 100%; display: block; border: none; filter: saturate(.9) hue-rotate(5deg); }
+.loc-map-footer {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 16px 22px;
+  background: linear-gradient(0deg, rgba(253,248,243,.94), transparent);
+  display: flex; gap: 10px;
+}
+
+/* ════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════ */
+.ft {
+  background: var(--ink);
+  padding: 68px 0 0;
+}
+.ft-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 44px; margin-bottom: 52px;
+}
+.ft-brand { display: flex; align-items: center; gap: 13px; margin-bottom: 18px; }
+.ft-logo {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--petal), var(--petal2));
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 17px; flex-shrink: 0;
+}
+.ft-name { color: #fff; font-size: 14px; font-weight: 800; display: block; line-height: 1.2; }
+.ft-spec { color: var(--petal); font-size: 11px; display: block; }
+.ft-desc { font-size: 13.5px; color: rgba(255,255,255,.42); line-height: 1.95; margin-bottom: 22px; }
+.ft-social { display: flex; gap: 10px; }
+.ft-social a {
+  width: 38px; height: 38px; border-radius: 12px;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,.45); font-size: 14px;
+  transition: var(--tr);
+}
+.ft-social a:hover { background: var(--petal2); color: #fff; border-color: var(--petal2); }
+.ft-col-h {
+  font-size: 13px; font-weight: 800; color: #fff;
+  padding-bottom: 12px; margin-bottom: 18px;
+  border-bottom: 1.5px solid rgba(232,165,152,.18);
+}
+.ft-links li + li { margin-top: 10px; }
+.ft-links a {
+  font-size: 13px; color: rgba(255,255,255,.42);
+  display: flex; align-items: center; gap: 8px; transition: var(--tr);
+}
+.ft-links a i { font-size: 9px; color: var(--petal); }
+.ft-links a:hover { color: var(--petal); padding-right: 4px; }
+.ft-ci { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.ft-ci .ic { color: var(--petal); font-size: 12px; margin-top: 4px; flex-shrink: 0; }
+.ft-ci span, .ft-ci a { font-size: 13px; color: rgba(255,255,255,.42); line-height: 1.7; }
+.ft-bottom {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 22px 0;
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12.5px; color: rgba(255,255,255,.22);
+  flex-wrap: wrap; gap: 10px;
+}
+
+/* ════════════════════════════════════════
+   FLOATS
+════════════════════════════════════════ */
+.wa-float {
+  position: fixed; bottom: 28px; left: 28px;
+  width: 58px; height: 58px;
+  background: linear-gradient(135deg, #2dc96d, #1a9952);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 26px; z-index: 980;
+  box-shadow: var(--sh-wa);
+  transition: transform .3s;
+  animation: wa-glow 3.5s ease-in-out infinite;
+}
+.wa-float:hover { transform: scale(1.12); color: #fff; }
+@keyframes wa-glow {
+  0%,100% { box-shadow: var(--sh-wa); }
+  50%      { box-shadow: 0 8px 36px rgba(37,211,102,.55), 0 0 0 8px rgba(37,211,102,.1); }
+}
+.btt {
+  position: fixed; bottom: 100px; left: 28px;
+  width: 42px; height: 42px;
+  background: var(--petal2); color: #fff;
+  border: none; border-radius: 12px;
+  cursor: pointer; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s, transform .3s;
+  z-index: 979; box-shadow: 0 4px 16px rgba(212,133,122,.35);
+}
+.btt.show { opacity: 1; pointer-events: auto; }
+.btt:hover { transform: translateY(-3px); }
+
+/* Toast */
+.toast-el {
+  position: fixed; top: 84px; left: 50%;
+  transform: translateX(-50%) translateY(-16px);
+  background: #fff;
+  border: 1.5px solid rgba(232,165,152,.25);
+  border-radius: var(--r1);
+  padding: 14px 22px; box-shadow: var(--sh3);
+  display: flex; align-items: center; gap: 12px;
+  z-index: 2000; opacity: 0;
+  transition: all .42s cubic-bezier(.34,1.56,.64,1);
+  min-width: 260px;
+}
+.toast-el.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.toast-el span { font-size: 14px; font-weight: 700; color: var(--ink); }
+
+/* ════════════════════════════════════════
+   SCROLL REVEAL
+════════════════════════════════════════ */
+.rv   { opacity:0; transform:translateY(32px); transition:opacity .7s ease, transform .7s ease; }
+.rv-r { opacity:0; transform:translateX(-32px); transition:opacity .75s ease, transform .75s ease; }
+.rv-l { opacity:0; transform:translateX(32px);  transition:opacity .75s ease, transform .75s ease; }
+.rv-s { opacity:0; transform:scale(.93);        transition:opacity .65s ease, transform .65s ease; }
+.rv.show,.rv-r.show,.rv-l.show,.rv-s.show { opacity:1; transform:none; }
+.d1{transition-delay:.07s} .d2{transition-delay:.14s} .d3{transition-delay:.22s}
+.d4{transition-delay:.30s} .d5{transition-delay:.38s} .d6{transition-delay:.46s}
+
+/* ════════════════════════════════════════
+   RESPONSIVE
+════════════════════════════════════════ */
+@media (max-width: 1060px) {
+  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .hero-sub { margin: 0 auto 36px; }
+  .hero-stats { max-width: 440px; margin: 0 auto 36px; }
+  .hero-btns { justify-content: center; }
+  .hero-visual { margin: 0 auto; }
+  .hero-frame { width: 300px; }
+  .hbadge { display: none; }
+  .about-grid { grid-template-columns: 1fr; gap: 56px; }
+  .about-img-wrap { max-width: 340px; margin: 0 auto; }
+  .about-badge { left: 0; right: 0; bottom: -20px; max-width: 250px; margin: 0 auto; }
+  .booking-grid { grid-template-columns: 1fr; }
+  .loc-layout { grid-template-columns: 1fr; }
+  .ft-grid { grid-template-columns: 1fr 1fr; }
+  .nav-links {
+    display: none; position: absolute; top: 70px;
+    right: 0; left: 0;
+    background: rgba(253,248,243,.98);
+    flex-direction: column; padding: 14px 18px;
+    box-shadow: var(--sh2);
+    border-bottom: 1px solid rgba(232,165,152,.15);
+    backdrop-filter: blur(20px);
+  }
+  .nav-links.open { display: flex; }
+  .ham { display: flex; }
+}
+@media (max-width: 768px) {
+  .srv-grid { grid-template-columns: 1fr 1fr; }
+  .stats-row { grid-template-columns: 1fr 1fr; }
+  .test-grid { grid-template-columns: 1fr; }
+  .test-card:nth-child(2) { margin-top: 0; }
+  .feat-grid { grid-template-columns: 1fr; }
+  .ft-grid { grid-template-columns: 1fr; }
+  .trust-items { flex-wrap: wrap; }
+}
+@media (max-width: 520px) {
+  .srv-grid { grid-template-columns: 1fr; }
+  .hstat-n { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo"><i class="fas fa-heartbeat"></i></div>
+      <div>
+        <span class="nav-name">د. فاطمة صلاح عاشور</span>
+        <span class="nav-spec">أمراض النساء والتوليد</span>
+      </div>
+    </a>
+    <nav class="nav-links" id="nbLinks">
+      <a href="index.html" class="act">الرئيسية</a>
+      <a href="pages/about.html">عن الدكتورة</a>
+      <a href="pages/services.html">الخدمات</a>
+      <a href="pages/blog.html">المقالات</a>
+      <a href="pages/faq.html">الأسئلة</a>
+      <a href="pages/contact.html">اتصل بنا</a>
+      <a href="pages/appointment.html" class="nav-cta">
+        <i class="fas fa-calendar-plus"></i> احجزي موعدك
+      </a>
+    </nav>
+    <button class="ham" id="hamBtn" aria-label="قائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-dots"></div>
+
+  <div class="hero-inner">
+    <!-- Text -->
+    <div>
+      <div class="hero-pill">
+        <span class="hero-pill-dot"></span>
+        استشارية معتمدة · نقابة الأطباء المصريين
+      </div>
+      <h1>
+        رعاية نسائية<br>
+        دافئة من <span class="rose-word">قلب المنيا</span>
+      </h1>
+      <p class="hero-sub">
+        الدكتورة فاطمة صلاح عاشور — خبرة تتجاوز ١٥ عاماً في أمراض النساء والتوليد.
+        رعاية طبية متكاملة بلمسة إنسانية وخصوصية تامة لكل مريضة.
+      </p>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="5000" data-sfx="+">٠</span></span>
+          <span class="hstat-l">ولادة ناجحة</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="15" data-sfx="+">٠</span></span>
+          <span class="hstat-l">سنة خبرة</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="10000" data-sfx="+">٠</span></span>
+          <span class="hstat-l">حالة مُعالَجة</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="98" data-sfx="٪">٠</span></span>
+          <span class="hstat-l">رضا المريضات</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="pages/appointment.html" class="btn btn-rose btn-lg">
+          <i class="fas fa-calendar-plus"></i> احجزي موعدك الآن
+        </a>
+        <a href="https://wa.me/201033910907?text=مرحباً،%20أريد%20الاستفسار" target="_blank" class="btn btn-wa btn-lg">
+          <i class="fab fa-whatsapp"></i> واتساب مباشر
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <div class="hero-frame-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=680&h=900&q=88&crop=faces,top"
+            alt="الدكتورة فاطمة صلاح عاشور — استشارية أمراض النساء والتوليد"
+            loading="eager"
+            onerror="this.src='https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=680&h=900&q=85'">
+        </div>
+        <!-- Floating badges -->
+        <div class="hbadge b1">
+          <div class="hbadge-icon"><i class="fas fa-baby"></i></div>
+          <div>
+            <div class="hbadge-t">+٥٠٠٠ ولادة</div>
+            <div class="hbadge-s">ناجحة ومتابَعة</div>
+          </div>
+        </div>
+        <div class="hbadge b2">
+          <div class="hbadge-icon"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <div class="hbadge-t">رعاية آمنة</div>
+            <div class="hbadge-s">بأعلى المعايير</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TRUST STRIP ══════════════ -->
+<div class="trust-strip">
+  <div class="trust-items">
+    <div class="trust-item"><i class="fas fa-user-md"></i> استشارية معتمدة</div>
+    <div class="trust-item"><i class="fas fa-hospital"></i> نقابة الأطباء المصريين</div>
+    <div class="trust-item"><i class="fas fa-clock"></i> ٦ أيام أسبوعياً</div>
+    <div class="trust-item"><i class="fas fa-map-marker-alt"></i> أبو قرقاص · المنيا</div>
+    <div class="trust-item"><i class="fab fa-whatsapp"></i> واتساب مباشر</div>
+    <div class="trust-item"><i class="fas fa-graduation-cap"></i> دكتوراه جامعة أسيوط</div>
+  </div>
+</div>
+
+<!-- ══════════════ SERVICES ══════════════ -->
+<section class="sec-srv" id="services">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sh-eyebrow"><i class="fas fa-stethoscope"></i> خدماتنا الطبية</div>
+      <h2>رعاية شاملة في كل مرحلة</h2>
+      <p>نقدم طيفاً واسعاً من خدمات صحة المرأة بأعلى معايير الجودة والخصوصية</p>
+      <div class="sh-ornament">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line r"></div>
+      </div>
+    </div>
+    <div class="srv-grid">
+
+      <div class="srv-card rv d1">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="متابعة الحمل" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-baby-carriage"></i></div>
+          <h3>متابعة الحمل</h3>
+          <p>فحوصات دورية شاملة، سونار ثلاثي الأبعاد، ومتابعة تطور الجنين طوال فترة الحمل بأمان ودقة.</p>
+          <a href="pages/services.html" class="srv-link">اعرفي أكثر <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d2">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="علاج العقم" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>علاج العقم</h3>
+          <p>تشخيص دقيق وخطط علاجية متخصصة مع أحدث تقنيات الإخصاب المساعد لتحقيق حلم الأمومة.</p>
+          <a href="pages/services.html" class="srv-link">اعرفي أكثر <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d3">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="أمراض النساء" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-female"></i></div>
+          <h3>أمراض النساء</h3>
+          <p>علاج الاضطرابات الهرمونية، الالتهابات، أكياس المبيض وكل المشكلات النسائية بدقة عالية.</p>
+          <a href="pages/services.html" class="srv-link">اعرفي أكثر <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d4">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1530026405186-ed1f139313f3?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="الولادة" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-child"></i></div>
+          <h3>الولادة الطبيعية والقيصرية</h3>
+          <p>إدارة الولادة بكلا نوعيها مع ضمان أعلى مستويات السلامة للأم والمولود في بيئة متطورة.</p>
+          <a href="pages/services.html" class="srv-link">اعرفي أكثر <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d5">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="فحص ما قبل الزواج" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-ring"></i></div>
+          <h3>فحص ما قبل الزواج</h3>
+          <p>فحوصات شاملة للمقبلات على الزواج للتأكد من الصحة الكاملة وتهيئة الجسم للإنجاب.</p>
+          <a href="pages/services.html" class="srv-link">اعرفي أكثر <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d6">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="سن اليأس" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-venus"></i></div>
+          <h3>سن اليأس والهرمونات</h3>
+          <p>خطط هرمونية متكاملة ودعم شامل لمرحلة انقطاع الطمث لضمان جودة الحياة والعافية.</p>
+          <a href="pages/services.html" class="srv-link">اعرفي أكثر <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px" class="rv">
+      <a href="pages/services.html" class="btn btn-ghost">
+        <i class="fas fa-th-large"></i> استعرضي جميع الخدمات
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="sec-about" id="about">
+  <div class="about-deco-circle"></div>
+  <div class="wrap">
+    <div class="about-grid">
+      <!-- Image -->
+      <div class="about-img-col rv-r">
+        <div class="about-corner-tl"></div>
+        <div class="about-corner-br"></div>
+        <div class="about-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=560&h=700&q=88&crop=top"
+            alt="الدكتورة فاطمة صلاح عاشور"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=560&h=700&q=85'">
+        </div>
+        <div class="about-badge">
+          <div class="ab-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <div class="ab-t">دكتوراه أمراض النساء والتوليد</div>
+            <div class="ab-s">جامعة أسيوط</div>
+          </div>
+        </div>
+      </div>
+      <!-- Text -->
+      <div class="about-text rv-l">
+        <div class="eyebrow"><i class="fas fa-user-md"></i> عن الدكتورة</div>
+        <h2>الدكتورة فاطمة<br><span class="rose">صلاح عاشور</span></h2>
+        <span class="subtitle">استشارية أمراض النساء والتوليد · المنيا، مصر</span>
+        <p>متخصصة في أمراض النساء والتوليد بخبرة تمتد لأكثر من ١٥ عاماً في خدمة المرأة المصرية. حاصلة على دكتوراه من جامعة أسيوط وعضو نقابة الأطباء المصريين.</p>
+        <p>تتميز بأسلوبها الإنساني الراقي وحرصها الشديد على راحة وخصوصية كل مريضة، وتؤمن أن الطب رسالة إنسانية قبل أن يكون علماً.</p>
+        <div class="feat-grid">
+          <div class="feat">
+            <div class="feat-icon"><i class="fas fa-baby-carriage"></i></div>
+            <div><div class="feat-t">متابعة الحمل الدقيقة</div><div class="feat-s">سونار 2D و3D</div></div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon"><i class="fas fa-heartbeat"></i></div>
+            <div><div class="feat-t">تخصص في العقم</div><div class="feat-s">علاج متقدم ومتكامل</div></div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon"><i class="fas fa-procedures"></i></div>
+            <div><div class="feat-t">خبرة جراحية واسعة</div><div class="feat-s">عمليات نسائية متنوعة</div></div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon"><i class="fab fa-whatsapp"></i></div>
+            <div><div class="feat-t">استشارات أونلاين</div><div class="feat-s">عبر الواتساب مباشرة</div></div>
+          </div>
+        </div>
+        <div class="about-btns">
+          <a href="pages/about.html" class="btn btn-rose"><i class="fas fa-user-md"></i> اقرأي السيرة كاملة</a>
+          <a href="pages/appointment.html" class="btn btn-ghost"><i class="fas fa-calendar-plus"></i> احجزي موعداً</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<section class="sec-stats">
+  <div class="stats-row">
+    <div class="stat-item rv d1">
+      <span class="stat-n"><span data-to="5000" data-sfx="+">٠</span></span>
+      <span class="stat-l">ولادة ناجحة</span>
+    </div>
+    <div class="stat-item rv d2">
+      <span class="stat-n"><span data-to="15" data-sfx="+">٠</span></span>
+      <span class="stat-l">سنة خبرة</span>
+    </div>
+    <div class="stat-item rv d3">
+      <span class="stat-n"><span data-to="10000" data-sfx="+">٠</span></span>
+      <span class="stat-l">حالة مُعالَجة</span>
+    </div>
+    <div class="stat-item rv d4">
+      <span class="stat-n"><span data-to="98" data-sfx="٪">٠</span></span>
+      <span class="stat-l">رضا المريضات</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section class="sec-test" id="testimonials">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sh-eyebrow"><i class="fas fa-star"></i> آراء المريضات</div>
+      <h2>ماذا تقول مريضاتنا</h2>
+      <p>ثقة آلاف السيدات في رعاية الدكتورة فاطمة هي أكبر شهادة على جودة خدماتنا</p>
+      <div class="sh-ornament">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line r"></div>
+      </div>
+    </div>
+    <div class="test-grid">
+
+      <div class="test-card c1 rv d1">
+        <div class="test-q">"</div>
+        <div class="test-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="test-txt">الدكتورة فاطمة متابعتها ممتازة طول فترة الحمل، وحمدلله الولادة كانت طبيعية ومش حسيت بخوف لأنها كانت موجودة ومطمنتني دايماً.</p>
+        <div class="test-author">
+          <div class="test-av">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=96&h=96&q=80&crop=faces" alt="سامية محمد" loading="lazy">
+          </div>
+          <div>
+            <div class="test-name">أ. سامية محمد</div>
+            <div class="test-role">أم لطفلة جديدة ❤️</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card rv d2">
+        <div class="test-q">"</div>
+        <div class="test-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="test-txt">كنت عندي مشكلة عقم من سنين وبعد ما اتعالجت عند الدكتورة فاطمة حمدلله اتحملت. ربنا يجازيها خير، دكتورة إنسانة قبل ما تكون طبيبة.</p>
+        <div class="test-author">
+          <div class="test-av">
+            <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=96&h=96&q=80&crop=faces" alt="نورهان علي" loading="lazy">
+          </div>
+          <div>
+            <div class="test-name">أ. نورهان علي</div>
+            <div class="test-role">بعد علاج العقم ✨</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card c3 rv d3">
+        <div class="test-q">"</div>
+        <div class="test-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="test-txt">أول ما زرتها حسيت براحة وخصوصية. بتفهمك وبتشرحلك كل حاجة بوضوح. أنا سعيدة إني لاقيت دكتورة بجد في المنيا.</p>
+        <div class="test-author">
+          <div class="test-av">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=96&h=96&q=80&crop=faces" alt="هدى يوسف" loading="lazy">
+          </div>
+          <div>
+            <div class="test-name">أ. هدى يوسف</div>
+            <div class="test-role">مريضة منتظمة 🌸</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ BOOKING ══════════════ -->
+<section class="sec-booking" id="booking">
+  <div class="wrap">
+    <div class="booking-grid">
+      <!-- Info -->
+      <div class="rv-r">
+        <div class="sh-eyebrow" style="justify-content:flex-start;margin-bottom:20px">
+          <i class="fas fa-calendar-plus"></i> حجز موعد
+        </div>
+        <h2>احجزي موعدك<br><span>الآن بسهولة</span></h2>
+        <p>يمكنك حجز موعدك مباشرةً عبر الواتساب أو ملء النموذج. نضمن خصوصية تامة ورعاية متخصصة لكل حالة.</p>
+        <div class="bk-item">
+          <div class="bk-icon wa"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="bk-title">واتساب مباشر</div>
+            <div class="bk-val"><a href="https://wa.me/201033910907">+201033910907</a></div>
+          </div>
+        </div>
+        <div class="bk-item">
+          <div class="bk-icon rose"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="bk-title">اتصال هاتفي</div>
+            <div class="bk-val"><a href="tel:+201033910907">+201033910907</a></div>
+          </div>
+        </div>
+        <div class="bk-item">
+          <div class="bk-icon gold"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="bk-title">مواعيد العمل</div>
+            <div class="bk-val">السبت – الخميس &nbsp;|&nbsp; ٥م – ١٠م</div>
+          </div>
+        </div>
+      </div>
+      <!-- Form -->
+      <div class="rv-l">
+        <div class="qform-card">
+          <div class="qf-title">نموذج الحجز السريع</div>
+          <div class="qf-sub">أرسلي طلبك وسنتواصل معك فوراً عبر الواتساب</div>
+          <form id="quickForm" novalidate>
+            <div class="fg">
+              <label class="fl">الاسم الكريم <span class="req">*</span></label>
+              <input name="name" type="text" class="fi" placeholder="اسمك الكريم" required>
+            </div>
+            <div class="fg">
+              <label class="fl">رقم الهاتف <span class="req">*</span></label>
+              <input name="phone" type="tel" class="fi" placeholder="01xxxxxxxxx" required>
+            </div>
+            <div class="fg">
+              <label class="fl">نوع الخدمة</label>
+              <select name="service" class="fi">
+                <option value="">اختاري الخدمة</option>
+                <option>متابعة الحمل</option>
+                <option>علاج العقم</option>
+                <option>أمراض النساء</option>
+                <option>فحص ما قبل الزواج</option>
+                <option>الولادة</option>
+                <option>سن اليأس والهرمونات</option>
+                <option>استشارة عامة</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-wa btn-full" style="margin-top:8px;font-size:15px;padding:16px;border-radius:14px">
+              <i class="fab fa-whatsapp"></i> أرسلي الطلب عبر الواتساب
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ LOCATION ══════════════ -->
+<section class="sec-loc" id="location">
+  <div class="wrap">
+    <div class="sh rv" style="margin-bottom:48px">
+      <div class="sh-eyebrow"><i class="fas fa-map-marker-alt"></i> موقع العيادة</div>
+      <h2>كيف تصلين إلينا</h2>
+    </div>
+    <div class="loc-layout">
+      <div class="loc-cards">
+        <div class="loc-card rv d1">
+          <div class="loc-ic rose"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="loc-ct">العنوان</div>
+            <div class="loc-cv">جريس أبو قرقاص<br>المنيا، مصر</div>
+          </div>
+        </div>
+        <div class="loc-card rv d2">
+          <div class="loc-ic green"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="loc-ct">واتساب مباشر</div>
+            <div class="loc-cv"><a href="https://wa.me/201033910907">+201033910907</a></div>
+          </div>
+        </div>
+        <div class="loc-card rv d3">
+          <div class="loc-ic rose"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="loc-ct">هاتف العيادة</div>
+            <div class="loc-cv"><a href="tel:+201033910907">+201033910907</a></div>
+          </div>
+        </div>
+        <div class="loc-card rv d4">
+          <div class="loc-ic gold"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="loc-ct">مواعيد العمل</div>
+            <div class="loc-cv">
+              السبت – الخميس: ٥م – ١٠م<br>
+              <span style="color:var(--petal2);font-weight:700">الجمعة: إجازة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loc-map-wrap rv-l">
+        <iframe
+          src="https://maps.google.com/maps?q=Abu+Qurqas,+Minya,+Egypt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          title="موقع عيادة الدكتورة فاطمة صلاح عاشور - أبو قرقاص المنيا"
+          allowfullscreen loading="lazy">
+        </iframe>
+        <div class="loc-map-footer">
+          <a href="https://maps.google.com/?q=Abu+Qurqas,Minya,Egypt" target="_blank" class="btn btn-rose btn-sm">
+            <i class="fas fa-map-marker-alt"></i> خرائط جوجل
+          </a>
+          <a href="https://wa.me/201033910907?text=أريد%20الاتجاهات%20للعيادة" target="_blank" class="btn btn-wa btn-sm">
+            <i class="fab fa-whatsapp"></i> اطلبي الاتجاهات
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-brand">
+          <div class="ft-logo"><i class="fas fa-heartbeat"></i></div>
+          <div>
+            <span class="ft-name">د. فاطمة صلاح عاشور</span>
+            <span class="ft-spec">أمراض النساء والتوليد</span>
+          </div>
+        </div>
+        <p class="ft-desc">متخصصة في أمراض النساء والتوليد بالمنيا. رعاية صحية متكاملة للمرأة في جميع مراحل حياتها بخصوصية واحترافية تامة.</p>
+        <div class="ft-social">
+          <a href="https://wa.me/201033910907" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="انستقرام"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-h">روابط سريعة</div>
+        <ul class="ft-links">
+          <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+          <li><a href="pages/about.html"><i class="fas fa-chevron-left"></i> عن الدكتورة</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-chevron-left"></i> الخدمات</a></li>
+          <li><a href="pages/appointment.html"><i class="fas fa-chevron-left"></i> حجز موعد</a></li>
+          <li><a href="pages/blog.html"><i class="fas fa-chevron-left"></i> المقالات</a></li>
+          <li><a href="pages/faq.html"><i class="fas fa-chevron-left"></i> الأسئلة</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-h">خدماتنا</div>
+        <ul class="ft-links">
+          <li><a href="pages/services.html"><i class="fas fa-chevron-left"></i> متابعة الحمل</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-chevron-left"></i> الولادة الطبيعية</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-chevron-left"></i> علاج العقم</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-chevron-left"></i> أمراض النساء</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-chevron-left"></i> قبل الزواج</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-chevron-left"></i> سن اليأس</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-h">تواصلي معنا</div>
+        <div class="ft-ci"><i class="ic fas fa-map-marker-alt"></i><span>جريس أبو قرقاص، المنيا، مصر</span></div>
+        <div class="ft-ci"><i class="ic fas fa-phone-alt"></i><a href="tel:+201033910907">+201033910907</a></div>
+        <div class="ft-ci"><i class="ic fab fa-whatsapp"></i><a href="https://wa.me/201033910907" target="_blank">واتساب مباشر</a></div>
+        <div class="ft-ci"><i class="ic fas fa-clock"></i><span>السبت – الخميس | ٥م – ١٠م</span></div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© ٢٠٢٦ عيادة الدكتورة فاطمة صلاح عاشور — جميع الحقوق محفوظة</span>
+      <span>المنيا، مصر</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floats -->
+<a href="https://wa.me/201033910907?text=مرحباً،%20أريد%20حجز%20موعد" class="wa-float" target="_blank" rel="noopener">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<button class="btt" id="bttBtn"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+(function(){
+'use strict';
+
+/* Navbar */
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('up', scrollY > 30);
+  const b = document.getElementById('bttBtn');
+  if(b) b.classList.toggle('show', scrollY > 400);
+}, { passive: true });
+
+/* Hamburger */
+const ham = document.getElementById('hamBtn'), nbl = document.getElementById('nbLinks');
+if(ham && nbl){
+  ham.addEventListener('click', () => {
+    const o = nbl.classList.toggle('open');
+    const s = ham.querySelectorAll('span');
+    s[0].style.transform = o ? 'rotate(45deg) translate(5px,5px)' : '';
+    s[1].style.opacity   = o ? '0' : '1';
+    s[2].style.transform = o ? 'rotate(-45deg) translate(5px,-5px)' : '';
+  });
+  nbl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nbl.classList.remove('open');
+    ham.querySelectorAll('span').forEach((s,i) => { s.style.transform=''; if(i===1)s.style.opacity='1'; });
+  }));
+}
+
+/* Back to top */
+const btt = document.getElementById('bttBtn');
+if(btt) btt.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+/* Smooth scroll */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href'); if(id==='#') return;
+    const t  = document.querySelector(id);
+    if(t){ e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 78, behavior:'smooth' }); }
+  });
+});
+
+/* Scroll Reveal */
+const rvObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); rvObs.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -44px 0px' });
+document.querySelectorAll('.rv,.rv-r,.rv-l,.rv-s').forEach(el => rvObs.observe(el));
+
+/* Animated Counters */
+const cObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(!e.isIntersecting) return;
+    const el = e.target, to = +el.dataset.to, sfx = el.dataset.sfx || '';
+    let cur = 0; const step = to / 85;
+    const id = setInterval(() => {
+      cur = Math.min(cur + step, to);
+      el.textContent = Math.floor(cur).toLocaleString('ar-EG') + sfx;
+      if(cur >= to) clearInterval(id);
+    }, 20);
+    cObs.unobserve(el);
+  });
+}, { threshold: .65 });
+document.querySelectorAll('[data-to]').forEach(el => cObs.observe(el));
+
+/* Toast */
+window.toast = function(msg, type){
+  const t = document.createElement('div'); t.className = 'toast-el';
+  const clr = type === 'err' ? '#d44f4f' : '#1a9952';
+  t.innerHTML = `<div style="width:34px;height:34px;border-radius:50%;background:${clr}18;color:${clr};display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0"><i class="fas ${type==='err'?'fa-times-circle':'fa-check-circle'}"></i></div><span>${msg}</span>`;
+  document.body.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 450); }, 3200);
+};
+
+/* Quick booking form */
+const qf = document.getElementById('quickForm');
+if(qf){
+  qf.addEventListener('submit', e => {
+    e.preventDefault();
+    const n = qf.querySelector('[name=name]')?.value.trim();
+    const p = qf.querySelector('[name=phone]')?.value.trim();
+    const s = qf.querySelector('[name=service]')?.value;
+    if(!n || !p){ window.toast('يرجى ملء الاسم ورقم الهاتف', 'err'); return; }
+    const msg = `مرحباً دكتورة فاطمة 🌸\nاسمي: ${n}\nرقمي: ${p}\nأريد: ${s || 'استشارة عامة'}\nأرجو تحديد موعد. شكراً`;
+    window.open('https://wa.me/201033910907?text=' + encodeURIComponent(msg), '_blank');
+    qf.reset();
+    window.toast('جاري فتح الواتساب...', 'ok');
+  });
+}
+
+})();
+</script>
+</body>
+</html>
